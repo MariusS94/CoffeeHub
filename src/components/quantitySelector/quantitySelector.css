@@ -1,28 +1,38 @@
-.container {
+.quantitySelector {
+  font-family: "Sen", sans-serif;
   display: flex;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  align-items: stretch;
+}
+
+.quantitySelector > div {
   font-size: 1.1rem;
+  color: #2d140d;
+  padding: 4px 14px;
+  flex-grow: 1;
+  text-align: center;
 }
 
-.minus {
-  background-color: #cf9775;
+.quantitySelector > button {
   color: white;
-  padding: 10px 16px;
+  background: #cf9775;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 5px 10px;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.quantitySelector > button:first-child {
   border-radius: 100px 0 0 100px;
-  align-self: center;
+  padding-left: 12px;
 }
 
-.plus {
-  background-color: #cf9775;
-  color: white;
-  padding: 10px 16px;
+.quantitySelector > button:last-child {
   border-radius: 0 100px 100px 0;
-  align-self: center;
+  padding-right: 12px;
 }
 
-.coffee-counter {
-  color: black;
-  padding: 13px 24px;
-  align-self: center;
+.quantitySelector > button > svg {
+  fill: #fff;
 }

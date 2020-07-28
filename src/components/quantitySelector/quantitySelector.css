@@ -35,3 +35,7 @@
 .quantitySelector > button > svg {
   fill: #fff;
 }
+.btn_one:disabled,
+.btn_two:disabled {
+  background: grey;
+}

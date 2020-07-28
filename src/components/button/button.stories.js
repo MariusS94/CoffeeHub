@@ -1,6 +1,14 @@
 import "./button.css";
-import button from "./button.html";
+import { createButton } from "./button";
 
 export default { title: "Button" };
 
-export const addToCart = () => button;
+export const addToCart = () => {
+  let button = createButton("Add to cart");
+
+  button.addEventListener("click", () => {
+    alert("Hello");
+  });
+
+  return button;
+};

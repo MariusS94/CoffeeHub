@@ -4,10 +4,6 @@ import { useEffect } from "@storybook/client-api";
 
 export default { title: "Quantity Selector" };
 
-/* export const coffeeSelector = () => {
-  return quantitySelector;
-}; */
-
 export const basic = () => {
   useEffect(() => {
     const minusButton = document.querySelector(".btn_one");
@@ -15,7 +11,6 @@ export const basic = () => {
     const resultElement = document.querySelector(".result_field");
 
     minusButton.addEventListener("click", () => {
-      /* alert("minus") */
       const oldResult = Number(resultElement.innerHTML);
       if (oldResult === 2) {
         minusButton.disabled = true;
@@ -23,7 +18,6 @@ export const basic = () => {
       resultElement.innerHTML = oldResult - 1;
     });
     plusButton.addEventListener("click", () => {
-      /* alert("plus") */
       const oldResult = Number(resultElement.innerHTML);
       if (oldResult === 1) {
         minusButton.disabled = false;

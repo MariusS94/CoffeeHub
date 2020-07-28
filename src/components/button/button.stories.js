@@ -6,7 +6,9 @@ export default { title: "Button" };
 export const addToCart = () => {
   let button = createButton("Add to cart");
 
-  button.addEventListener("click", () => alert("Hello"));
+  button.addEventListener("click", () => {
+    alert("Hello");
+  });
 
   return button;
 };
